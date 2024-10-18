@@ -1,0 +1,137 @@
+
+.profile-container {
+    display: flex;
+    max-width: 1000px;
+    margin-top: 150px;
+    margin-left: 100px;
+    background-color: #f5f5f5;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 5px 8px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Sidebar for profile navigation */
+  .profile-sidebar {
+    flex: 1;
+    background-color: #049ff3;
+    padding: 20px;
+    color: rgb(251, 247, 247);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    gap: 20px;
+    min-width: 250px;
+  }
+  
+  /* Styling the profile image */
+  .profile-image {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
+    border: 3px solid white;
+  }
+  
+  /* Sidebar buttons */
+  .profile-sidebar button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background-color: #8ab8f8;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+  }
+  
+  .profile-sidebar button:hover {
+    background-color: #9dc5f1;
+  }
+  
+  /* Main content area */
+  .profile-content {
+    flex: 3;
+    padding: 20px;
+  }
+  
+  /* Section titles */
+  h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  .userDetail{
+    border: 1px solid rgb(210, 210, 210);
+    border-radius: 10px;
+    padding: 10px;
+    margin-top: 20px;
+  }
+  /* Profile details */
+  .show-profile p {
+    margin-bottom: 10px;
+    font-size: 16px;
+    line-height: 1.6;
+  }
+  
+  .show-profile p strong {
+    color: #555;
+  }
+  
+  /* Update Profile form */
+  .Profile-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .Profile-form label {
+    display: flex;
+    flex-direction: column;
+    font-weight: bold;
+    color: #333;
+    font-size: 16px;
+  }
+  
+  /* Input fields */
+  .Profile-form input {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+  /* Submit buttons */
+  .Profile-form button{
+    padding: 10px 20px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-weight: bold;
+  }
+  
+  .Profile-form button:hover {
+    background-color: #218838;
+  }
+  
+  /* Success and error messages */
+  p.success-message {
+    color: green;
+    font-weight: bold;
+    margin-top: 10px;
+  }
+  
+  p.error-message {
+    color:green
+  }
