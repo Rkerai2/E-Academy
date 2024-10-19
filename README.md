@@ -16,7 +16,9 @@ Engaging content delivery through videos.
 
 # Technologies Used
 Frontend: React, React Router, Axios
+
 Backend: Django, Django REST Framework
+
 Styling: Custom CSS
 
 # Installation
