@@ -1,0 +1,563 @@
+/***** General *****/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  :root {
+    --themeColor: #5bc0de;
+    --primary: #ED9455;
+    --secondary: #FFBB70;
+    --ternary: #FFEC9E;
+    --quad: #FFFBDA;
+  }
+  
+  body {
+    position: relative;
+    font-family: 'Libre Franklin' !important;
+  }
+  
+
+
+/* Main */
+.home {
+  display: flex;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f5f5f5; /* Light grey background */
+  max-width: 100%;
+  max-height: 100%;
+  padding-left: 100px;
+ 
+}
+
+.row {
+   display: flex;
+   align-items: center;
+   flex-wrap: wrap;
+   gap: 1.5rem;
+}  
+
+#homecontent h1
+{
+   font-size: 60px;
+   font-weight: bolder;
+   text-shadow: #070707;
+   font-family:'Gilroy', serif;
+}
+
+#homecontent p
+{
+   font-size: 25px;
+   font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+   letter-spacing: 1px;
+} 
+
+#homecontent .btn
+{
+   display: inline-block;
+   padding: .9rem 1.5rem;
+   border: .1rem solid  #9fbec8;
+   background-color: #9fbec8;
+   letter-spacing: 1px;
+   cursor: pointer;
+   margin-top: 1rem;
+   font-size: 2.1rem;
+   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+#homecontent .btn:hover{
+   transform: scale(1.15);
+}
+.bi{
+  padding-left: 10px;
+}
+
+.education-image {
+  width: 400px;              
+  height: auto;       
+  display: block;
+  margin-left:-60px;
+}
+
+
+
+
+/* Authentications*/ 
+
+.Register{
+  position: relative;
+  background: url(../Photos/Ba1.jpg ) no-repeat ;
+  background-position: center;
+  background-size: cover;
+  margin-top: 50px;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.Auth {
+  margin-top: 100px;
+  margin-bottom: 100px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+#Authentication{
+  justify-content: center;
+}
+#Authentication .btn{
+  display: inline-block;
+  border: .1rem solid  #2a4750;
+  background-color: #2a4750;
+  letter-spacing: 1px;
+  cursor: pointer;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  font-size: 2.1rem;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+#Authentication .btn:hover{
+  transform: scale(1.03);
+}
+#Authentication h2{
+  font-size: 2.8rem;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+#Authentication label{
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-left: 130px;
+}
+.form-group label {
+  font-size: 15px;
+  font-weight: bold; 
+}
+#Authentication .form-control{
+  border-radius: 5px;
+  border: 1px solid;
+}
+.message {
+  padding: 10px;
+  text-align: center;
+  border-radius: 5px;
+  font-size: 16px;
+}
+.message-success {
+  background-color: #d4edda;
+  color: #155724;
+  border: 1px solid #c3e6cb;
+}
+.message-error {
+  background-color: #f8d7da;
+  color: #721c24;
+  border: 1px solid #f5c6cb;
+}
+.message .icon {
+  margin-right: 10px;
+  font-size: 18px;
+  vertical-align: middle;
+}
+
+/*user  Dashboard*/
+
+
+
+/*subject Details*/
+
+.section-padding {
+  margin-top: 130px;
+}
+#section{
+  box-shadow: 0 10px 15px rgba(0, 0, 0, .09), 0 0 12px rgba(0, 0, 0, .09);
+  border-radius: 3%;
+}
+
+.subjectheader {
+  display: flex;
+  justify-content: space-between;
+}
+
+.subjectinfo {
+  flex: 1; /* Take up available space */
+  margin-top: 30px;
+  padding-left: 30px;
+  padding-right: 50px; /* Add some space between the text and image */
+}
+
+.subjectinfo h2 {
+  margin-bottom: 10px;
+  font-size: 40px;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.subjectinfo p {
+  margin: 25px 0;
+  font-size: 20px;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.subjectimage {
+  margin: 30px;
+  width: 270px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.course {
+  display: inline-flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.course h2 {
+  text-align: left;
+  margin-bottom: 20px;
+  font-size: 2rem;
+}
+
+.coursecard {
+  
+  background-color: #f4f4f4;
+  border-radius: 10px;
+  padding: 15px;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  width: 100%;
+  height: 230px;
+  max-width: 220px; /* Fixed size for each card */
+}
+
+.coursecard:hover {
+  transform: scale(1.05);
+}
+
+.courseimage {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.coursecard h5 {
+  color:black;
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+/*Course Details*/
+
+.button-container {
+  display: flex;
+  justify-content: start; /* Align buttons to the start */
+  margin-bottom: 10px; /* Reduce the gap between buttons and section */
+  margin-top: 30px;
+}
+
+.nav-button {
+  padding: 10px 20px;
+  border: none;
+  color: #070707;
+  background-color: #f0f0f0;
+  border-radius: 8px;
+  font-weight: bold;
+  font-size: 20px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-right: 20px; /* Add space between buttons */
+}
+
+.nav-button:hover {
+  background-color: #ddd;
+}
+
+.section-padding {
+  padding: 40px 0;
+}
+
+.overview-section,
+.modules-section,
+.recommendation-section {
+  max-width: 800px; /* Restrict the section width */
+  margin: 0 auto; /* Center-align the section */
+  text-align: left; /* Align content to the left */
+}
+
+.overview-section h2,
+.modules-section h2,
+.recommendation-section h2 {
+  font-size: 20px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  margin-bottom: 20px;
+}
+
+#overview h1{
+  font-size: 1.5rem;
+  font-weight: bolder;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  margin-bottom: 10px;
+}
+
+/*overview*/
+
+.course-overview-container {
+  width: 80%;
+  margin: 0 30px;
+  text-align: left;
+  max-width: 1200px;
+}
+
+.course-description {
+  margin-top: 20px;
+  font-size: 16px;
+  line-height: 24px;
+  font-family: OpenSans, Arial, sans-serif ;
+  color: #333;
+  max-height: max-content;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+}
+
+.read-more-button {
+  display: inline-block;
+  margin-top: 10px; 
+  margin-left: 30px;
+  border-radius: 8px;
+  background-color: #abcaf7;
+  color: rgb(78, 75, 75);
+  padding: 6px 10px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 1.0rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.read-more-button:hover {
+  background-color: #abcaf7;
+  transform: scale(1.05);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .course-overview-container {
+    width: 95%;
+    padding: 10px;
+  }
+
+  .course-overview-container h1 {
+    font-size: 1.5rem;
+  }
+
+  .course-description {
+    font-size: 0.9rem;
+  }
+}
+
+.what-you-learn-container {
+  
+  margin-top: 30px;
+  margin-left: 30px;
+  text-align: left;
+}
+
+/*modules*/
+#modules h1,#recommendation h1{
+  font-size: 2rem;
+  font-weight: bolder;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin-bottom: 10px;
+}
+
+.modules-overview-container,.recommendation-container{
+  width: 80%;
+  margin-top: 50px;
+  margin-left: 30px;
+  text-align: left;
+  max-width: 1200px;
+}
+
+.module-detail-container{
+  border: 2px solid rgb(213, 209, 209);
+  border-radius: 10px;
+}
+.module-card{
+  border-radius: 6px;
+  margin: 20px 50px ;
+}
+.module-title {
+  display: flex;
+  padding: 10px 20px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+  font-size: 18px;
+  font-family:  Source Sans Pro, Arial, sans-serif;
+  font-weight: bold;
+}
+.module-title:hover {
+  border-radius: 8px;
+  background-color: #f5f5f5; 
+ }
+.module-title .title-text {
+  display: flex;
+  flex-direction: column;
+}
+.module-title .bi{
+  font-size: 1.2rem; 
+  cursor: pointer;
+}
+.module-title h6{font-family: OpenSans, Arial, sans-serif;}
+.module-content{
+  margin: 10px 20px;
+}
+.toggle-button{
+  background-color: white; 
+  font-size: 14px;
+  border: none;
+  color: blue; 
+}
+.toggle-button:hover{background-color: white; }
+.video-list{
+  font-family:  Source Sans Pro, Arial, sans-serif;
+  padding-left: 40px;
+}
+
+.enroll button {
+  color: white;
+  padding: 10px 10px;
+  background-color: blue;
+  font-weight: bold;
+  border: solid blue;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  border-radius: 8px ;
+}
+.enroll button:hover {
+  transform: scale(1.05);
+}
+
+.Reviews-details {
+  width: 80%;
+  margin-top: 50px;
+  margin-left: 60px;
+  text-align: left;
+  max-width: 1200px;
+}
+
+/* Header Styling */
+.Reviews-details h2 {
+  font-size: 2rem;
+  font-weight: bolder;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin-bottom: 10px;
+}
+.reviews-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Individual Review */
+.review {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  border: 1px solid #e0e0e0;
+}
+
+.review-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+/* Avatar Styling */
+.avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #0056b3;
+  color: white;
+  font-size: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  margin-right: 15px;
+}
+
+/* Review Info */
+.review-info {
+  display: flex;
+  flex-direction: column;
+  margin-top: 25px;
+  margin-left: 20px;
+}
+
+.review-info h5 {
+  margin: 0;
+  font-size: 18px;
+  color: #333;
+  font-weight: bold;
+}
+
+.review-meta {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 14px;
+  color: #666;
+}
+
+.review-stars {
+  color: #f39c12;
+  font-size: 16px;
+}
+
+/* Review Date */
+.review-date {
+  margin-left: 10px;
+  font-size: 14px;
+  color: #888;
+}
+
+/* Review Text */
+.review-text {
+  margin-left: 85px;
+  font-size: 16px;
+  color: #555;
+  line-height: 1.5;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .review {
+    padding: 15px;
+  }
+
+  .avatar {
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+  }
+
+  .review-info h5 {
+    font-size: 16px;
+  }
+
+  .review-text {
+    font-size: 14px;
+  }
+}
+
+

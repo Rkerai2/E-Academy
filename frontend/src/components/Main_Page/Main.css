@@ -1,0 +1,273 @@
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 15px;
+}
+.row {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}  
+
+/* Hero Section */
+#homecontent {
+    margin-top: 130px;
+    margin-left: 60px; 
+    flex:1 1 42rem;
+}
+
+#homecontent h1 {
+  font-size: 40px;
+  font-weight: bold;
+  color: #2C3E50;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+#homecontent p {
+  font-size: 18px;
+  color: #7f8c8d;
+  margin-bottom: 20px;
+}
+
+.Mainbtn {
+  background-color: #3498db;
+  justify-content: center;
+  color: white;
+  cursor: pointer;
+  border-radius: 25px;
+  display: inline-block;
+}
+
+.Mainbtn:hover {
+  color: white;
+  transform: scale(0.15);
+}
+
+.bi-arrow-right {
+  margin-left: 5px;
+}
+
+.education-image {
+  margin-top: 150px;
+  max-width: 100%;
+  border-radius: 15px;
+}
+
+.Main-Top {
+  margin-top: 80px;
+}
+
+/* Search Section */
+.search-section {
+  margin-top: 50px;
+  margin-left: 60px;
+  margin-right: 60px;
+  background-color: #27ae60;
+  border-radius: 10px;
+  padding: 40px 0;
+  text-align: center;
+  color: white;
+}
+
+.search-heading {
+  font-size: 56px;
+  margin-bottom: 20px;
+}
+
+.highlight-text {
+  color: #f1c40f;
+  font-weight: bold;
+}
+
+.search-input-wrapper {
+  margin-top: 20px;
+  display: inline-block;
+  position: relative;
+}
+
+.search-input {
+  padding: 12px 20px;
+  width: 450px;
+  border: none;
+  border-radius: 25px;
+  font-size: 16px;
+}
+
+.search-form .btn {
+  height: 45px;
+  width: 45px;
+  margin-left: 10px;
+  background-color:white;
+  border: 1px solid #27ae60;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.search-form .btn:hover {
+  background-color: rgb(203, 195, 195);
+}
+
+
+/* Courses Section */
+.Main-courses-list {
+  margin: 60px;
+  
+}
+
+.Main-courses-list h2 {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #2c3e50;
+}
+.Main-course {
+  display: flex;
+  flex-direction: row; /* Ensures horizontal layout */
+  flex-wrap: wrap; /* Wraps to next row when space runs out */
+  justify-content: left;
+  gap:20px; /* Adds space between the cards */
+  margin: 0;
+  width: 100%;
+}
+
+.Main-coursecard {
+  background-color: #f4f4f4;
+  border-radius: 10px;
+  padding: 10px;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  width: 100%;
+  height: 280px;
+  max-width: 220px; /* Fixed size for each card */
+}
+
+.Main-courseimage {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.Main-coursecard:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.Main-courseimage {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.Main-coursecard h5 {
+  color:#101828;
+  font-weight: 600;
+  text-overflow: ellipsis;
+  font-family: Poppins, sans-serif;;
+  text-align: center;
+  font-size: 16px;
+  margin-top: 10px;
+}
+.Main-content {
+  min-height: 50px; /* Ensures the title area is uniform */
+}
+
+.view-program{
+
+  margin-top: auto; /* Keeps button at the bottom */
+  align-items: left;
+}
+.view-program-btn {
+  padding: 4px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #196ae5;
+  width: 100%;
+  display: inline-block;
+  margin-top: 5px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.view-program-btn:hover {
+  background-color: #caced0;
+}
+
+/* Subjects */
+
+.Dashboard{
+  padding: 20px;
+}
+
+#dashboard {
+    margin-left: 40px;
+
+}
+#dashboard  h1{
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #2c3e50;
+}
+
+.subject-card {
+  background-color: #f4f4f4;
+  border-radius: 10px;
+  padding: 10px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease;
+  width: 100%;
+  height: 260px;
+  margin-top: 40px;
+  max-width: 220px; /* Fixed size for each card */
+}
+#dashboard .card-body{
+  margin-bottom: 100%;
+}
+#dashboard .card-body p{
+  font-size: 15px;
+  margin-top:5px;
+}
+#dashboard .card-title{
+  font-size: 20px;
+  font-weight: bold;
+   font-family:sans-serif;
+}
+
+.subject-card:hover {
+  box-shadow: 0 10px 16px rgba(0, 0, 0, 0.3);
+}
+
+.subject-image {
+  margin: 20px 25px;
+  border-radius: calc(1rem - 1px);
+  width: 80%;
+  height: 140px;
+}
+
+.show .btn {
+  border: 2px solid blue;
+  color: blue;
+  margin-left: 10px;
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 1.3rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.show .btn:hover {
+  border: 2px solid blue;
+  color: blue;
+  transform: scale(1.05);
+}
+
