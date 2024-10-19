@@ -1,4 +1,5 @@
 #Personalized Learning Platform
+
 Overview
 The Personalized Learning Platform is a web application designed to provide users with customized learning experiences based on their preferences, learning styles, and progress. Built using React for the frontend and Django for the backend, this platform offers a seamless user experience while maintaining robust functionality.
 
