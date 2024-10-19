@@ -15,7 +15,7 @@ Tailored course recommendations based on user interests and progress.
 Engaging content delivery through videos.
 
 # Technologies Used
-Frontend: React, React Router, Axios
+#### Frontend: React, React Router, Axios
 
 Backend: Django, Django REST Framework
 
